@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KG-01</title>
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="content">
+            <canvas class="myCanvas" width="800" height="800"></canvas>
+            <div class="build-square">
+                <h1 class="size">800x800</h1>
+                <form action="" method="get" class="inputs">
+                    <div class="set-dot">
+                        <label for="top">Top dot</label>
+                        <input
+                            type="number"
+                            class="right-top-x"
+                            max="400"
+                            min="-400"
+                            placeholder="X coordinate"
+                            required
+                        />
+                        <input
+                            type="number"
+                            class="right-top-y"
+                            max="400"
+                            min="-400"
+                            placeholder="Y coordinate"
+                            required
+                        />
+                    </div>
+
+                    <div class="set-color">
+                        <label for="color">Square color</label>
+                        <input type="color" class="square-color" />
+                    </div>
+
+                    <div class="set-dot">
+                        <label for="bottom">Bottom dot</label>
+                        <input
+                            type="number"
+                            class="right-bottom-x"
+                            max="400"
+                            min="-400"
+                            placeholder="X coordinate"
+                            required
+                        />
+                        <input
+                            type="number"
+                            class="right-bottom-y"
+                            max="400"
+                            min="-400"
+                            placeholder="Y coordinate"
+                            required
+                        />
+                    </div>
+
+                    <div class="set-color">
+                        <label for="color">Circle color</label>
+                        <div class="inputs-color">
+                            <input type="color" class="circle-color" />
+                            <input type="checkbox" class="is-circle" checked />
+                        </div>
+                    </div>
+                </form>
+                <button class="btn-build">Build square!</button>
+                <button class="btn-build clear-btn">Clear!</button>
+            </div>
+        </div>
+    </body>
+    <script src="./js/clearButton.js"></script>
+    <script src="./js/startButton.js"></script>
+</html>

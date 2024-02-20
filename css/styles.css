@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fdf2e9;
+    font-family: 'rubik', sans-serif;
+}
+
+.size {
+    display: block;
+    font-weight: 800;
+    font-size: 64px;
+    place-self: center;
+}
+
+.content {
+    display: flex;
+}
+
+canvas {
+    display: block;
+    height: 100vh;
+    width: 100vh;
+    border: 3px solid #b3b3b3;
+    background-image: url('../img/back.png');
+    background-size: 100% 100%;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 4rem;
+    grid-row-gap: 2.7rem;
+    margin: 0 3.6rem;
+}
+
+.inputs label {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.inputs input {
+    max-width: 100%;
+}
+
+.build-square {
+    margin: 0 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 4rem;
+}
+
+.btn-build {
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 18px;
+    border: 0;
+    font-weight: 700;
+    transition: background-color 0.8s;
+    margin-top: 1rem;
+}
+
+.btn-build:hover,
+.btn-build:active {
+    background-color: #cf711f;
+}
+
+input {
+    width: 7.25rem;
+    height: 1.5rem;
+}
+
+.set-dot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.5rem;
+    column-gap: 0.8rem;
+}
+
+.set-dot label {
+    display: block;
+    grid-column: span 2;
+    text-align: center;
+}
+
+.set-dot input {
+    flex-grow: 1;
+}
+
+.set-color {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-btn {
+    background-color: #b3b3b3;
+}
+
+.clear-btn:hover,
+.clear-btn:active {
+    background-color: #8f8f8f;
+}
+
+.inputs-color {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.is-circle {
+    width: 1.5rem;
+}
